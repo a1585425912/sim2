@@ -1,0 +1,305 @@
+SIGNAL seed=20261043 Hs=0.5 hover: vRMSE 0.0002 m/s, wall 49.3s
+FIT seed=20261043 Hs=0.5 hover GP_noD_q1: 24.54ms/frame wall 62.3s
+FIT seed=20261043 Hs=0.5 hover GP_Doppler_q1: 26.55ms/frame wall 76.1s
+FIT seed=20261043 Hs=0.5 hover GP_noD_q001: 22.93ms/frame wall 88.3s
+FIT seed=20261043 Hs=0.5 hover GP_Doppler_q001: 25.62ms/frame wall 101.8s
+FIT seed=20261043 Hs=0.5 hover GP_Doppler_ignore_buoy: 25.34ms/frame wall 115.0s
+SIGNAL seed=20261043 Hs=0.5 straight: vRMSE 0.4533 m/s, wall 141.4s
+FIT seed=20261043 Hs=0.5 straight GP_noD_q1: 22.90ms/frame wall 153.5s
+FIT seed=20261043 Hs=0.5 straight GP_Doppler_q1: 25.96ms/frame wall 167.0s
+FIT seed=20261043 Hs=0.5 straight GP_noD_q001: 21.31ms/frame wall 178.5s
+FIT seed=20261043 Hs=0.5 straight GP_Doppler_q001: 25.08ms/frame wall 191.5s
+FIT seed=20261043 Hs=0.5 straight GP_Doppler_ignore_buoy: 24.06ms/frame wall 204.1s
+SIGNAL seed=20261043 Hs=0.5 circle: vRMSE 0.0007 m/s, wall 229.5s
+FIT seed=20261043 Hs=0.5 circle GP_noD_q1: 22.47ms/frame wall 241.4s
+FIT seed=20261043 Hs=0.5 circle GP_Doppler_q1: 24.79ms/frame wall 254.4s
+FIT seed=20261043 Hs=0.5 circle GP_noD_q001: 22.36ms/frame wall 266.2s
+FIT seed=20261043 Hs=0.5 circle GP_Doppler_q001: 24.72ms/frame wall 279.1s
+FIT seed=20261043 Hs=0.5 circle GP_Doppler_ignore_buoy: 24.71ms/frame wall 292.0s
+SIGNAL seed=20261043 Hs=0.5 mixed: vRMSE 0.0012 m/s, wall 327.3s
+FIT seed=20261043 Hs=0.5 mixed GP_noD_q1: 21.78ms/frame wall 338.9s
+FIT seed=20261043 Hs=0.5 mixed GP_Doppler_q1: 24.65ms/frame wall 351.7s
+FIT seed=20261043 Hs=0.5 mixed GP_noD_q001: 21.45ms/frame wall 363.1s
+FIT seed=20261043 Hs=0.5 mixed GP_Doppler_q001: 24.20ms/frame wall 375.8s
+FIT seed=20261043 Hs=0.5 mixed GP_Doppler_ignore_buoy: 22.96ms/frame wall 387.8s
+SIGNAL seed=20261043 Hs=0.5 climb: vRMSE 0.6686 m/s, wall 413.0s
+FIT seed=20261043 Hs=0.5 climb GP_noD_q1: 22.38ms/frame wall 424.7s
+FIT seed=20261043 Hs=0.5 climb GP_Doppler_q1: 24.67ms/frame wall 437.6s
+FIT seed=20261043 Hs=0.5 climb GP_noD_q001: 22.15ms/frame wall 449.3s
+FIT seed=20261043 Hs=0.5 climb GP_Doppler_q001: 25.52ms/frame wall 462.5s
+FIT seed=20261043 Hs=0.5 climb GP_Doppler_ignore_buoy: 23.74ms/frame wall 474.9s
+SIGNAL seed=20261043 Hs=1.5 hover: vRMSE 0.0002 m/s, wall 47.9s
+FIT seed=20261043 Hs=1.5 hover GP_noD_q1: 24.24ms/frame wall 60.6s
+FIT seed=20261043 Hs=1.5 hover GP_Doppler_q1: 22.65ms/frame wall 72.5s
+FIT seed=20261043 Hs=1.5 hover GP_noD_q001: 22.54ms/frame wall 84.5s
+FIT seed=20261043 Hs=1.5 hover GP_Doppler_q001: 25.59ms/frame wall 97.8s
+FIT seed=20261043 Hs=1.5 hover GP_Doppler_ignore_buoy: 24.99ms/frame wall 110.8s
+SIGNAL seed=20261043 Hs=1.5 straight: vRMSE 0.4328 m/s, wall 137.7s
+FIT seed=20261043 Hs=1.5 straight GP_noD_q1: 23.01ms/frame wall 149.8s
+FIT seed=20261043 Hs=1.5 straight GP_Doppler_q1: 25.14ms/frame wall 163.0s
+FIT seed=20261043 Hs=1.5 straight GP_noD_q001: 22.71ms/frame wall 175.0s
+FIT seed=20261043 Hs=1.5 straight GP_Doppler_q001: 26.32ms/frame wall 188.7s
+FIT seed=20261043 Hs=1.5 straight GP_Doppler_ignore_buoy: 25.76ms/frame wall 202.1s
+SIGNAL seed=20261043 Hs=1.5 circle: vRMSE 0.0007 m/s, wall 229.2s
+FIT seed=20261043 Hs=1.5 circle GP_noD_q1: 22.92ms/frame wall 241.3s
+FIT seed=20261043 Hs=1.5 circle GP_Doppler_q1: 25.13ms/frame wall 254.3s
+FIT seed=20261043 Hs=1.5 circle GP_noD_q001: 23.03ms/frame wall 266.5s
+FIT seed=20261043 Hs=1.5 circle GP_Doppler_q001: 26.17ms/frame wall 280.1s
+FIT seed=20261043 Hs=1.5 circle GP_Doppler_ignore_buoy: 25.96ms/frame wall 293.7s
+SIGNAL seed=20261043 Hs=1.5 mixed: vRMSE 0.0012 m/s, wall 328.8s
+FIT seed=20261043 Hs=1.5 mixed GP_noD_q1: 22.84ms/frame wall 341.0s
+FIT seed=20261043 Hs=1.5 mixed GP_Doppler_q1: 26.01ms/frame wall 354.6s
+FIT seed=20261043 Hs=1.5 mixed GP_noD_q001: 22.58ms/frame wall 366.6s
+FIT seed=20261043 Hs=1.5 mixed GP_Doppler_q001: 25.64ms/frame wall 380.0s
+FIT seed=20261043 Hs=1.5 mixed GP_Doppler_ignore_buoy: 25.28ms/frame wall 393.1s
+SIGNAL seed=20261043 Hs=1.5 climb: vRMSE 0.5739 m/s, wall 419.9s
+FIT seed=20261043 Hs=1.5 climb GP_noD_q1: 22.71ms/frame wall 432.0s
+FIT seed=20261043 Hs=1.5 climb GP_Doppler_q1: 24.21ms/frame wall 444.7s
+FIT seed=20261043 Hs=1.5 climb GP_noD_q001: 20.17ms/frame wall 455.5s
+FIT seed=20261043 Hs=1.5 climb GP_Doppler_q001: 26.24ms/frame wall 469.3s
+FIT seed=20261043 Hs=1.5 climb GP_Doppler_ignore_buoy: 25.97ms/frame wall 482.9s
+SEED 1/5 complete
+SIGNAL seed=20261044 Hs=0.5 hover: vRMSE 0.0002 m/s, wall 49.1s
+FIT seed=20261044 Hs=0.5 hover GP_noD_q1: 22.81ms/frame wall 61.2s
+FIT seed=20261044 Hs=0.5 hover GP_Doppler_q1: 25.78ms/frame wall 74.6s
+FIT seed=20261044 Hs=0.5 hover GP_noD_q001: 23.03ms/frame wall 86.7s
+FIT seed=20261044 Hs=0.5 hover GP_Doppler_q001: 25.67ms/frame wall 100.1s
+FIT seed=20261044 Hs=0.5 hover GP_Doppler_ignore_buoy: 25.75ms/frame wall 113.4s
+SIGNAL seed=20261044 Hs=0.5 straight: vRMSE 0.3310 m/s, wall 140.4s
+FIT seed=20261044 Hs=0.5 straight GP_noD_q1: 22.99ms/frame wall 152.5s
+FIT seed=20261044 Hs=0.5 straight GP_Doppler_q1: 26.00ms/frame wall 166.1s
+FIT seed=20261044 Hs=0.5 straight GP_noD_q001: 23.32ms/frame wall 178.4s
+FIT seed=20261044 Hs=0.5 straight GP_Doppler_q001: 26.23ms/frame wall 192.1s
+FIT seed=20261044 Hs=0.5 straight GP_Doppler_ignore_buoy: 26.55ms/frame wall 205.9s
+SIGNAL seed=20261044 Hs=0.5 circle: vRMSE 0.0006 m/s, wall 232.9s
+FIT seed=20261044 Hs=0.5 circle GP_noD_q1: 21.99ms/frame wall 244.6s
+FIT seed=20261044 Hs=0.5 circle GP_Doppler_q1: 26.11ms/frame wall 258.2s
+FIT seed=20261044 Hs=0.5 circle GP_noD_q001: 23.16ms/frame wall 270.4s
+FIT seed=20261044 Hs=0.5 circle GP_Doppler_q001: 25.28ms/frame wall 283.5s
+FIT seed=20261044 Hs=0.5 circle GP_Doppler_ignore_buoy: 26.16ms/frame wall 297.1s
+SIGNAL seed=20261044 Hs=0.5 mixed: vRMSE 0.0012 m/s, wall 333.4s
+FIT seed=20261044 Hs=0.5 mixed GP_noD_q1: 24.66ms/frame wall 346.4s
+FIT seed=20261044 Hs=0.5 mixed GP_Doppler_q1: 26.56ms/frame wall 360.2s
+FIT seed=20261044 Hs=0.5 mixed GP_noD_q001: 23.78ms/frame wall 372.8s
+FIT seed=20261044 Hs=0.5 mixed GP_Doppler_q001: 25.92ms/frame wall 386.3s
+FIT seed=20261044 Hs=0.5 mixed GP_Doppler_ignore_buoy: 25.63ms/frame wall 399.7s
+SIGNAL seed=20261044 Hs=0.5 climb: vRMSE 0.3825 m/s, wall 426.9s
+FIT seed=20261044 Hs=0.5 climb GP_noD_q1: 22.92ms/frame wall 438.9s
+FIT seed=20261044 Hs=0.5 climb GP_Doppler_q1: 25.72ms/frame wall 452.3s
+FIT seed=20261044 Hs=0.5 climb GP_noD_q001: 24.09ms/frame wall 464.8s
+FIT seed=20261044 Hs=0.5 climb GP_Doppler_q001: 28.36ms/frame wall 479.4s
+FIT seed=20261044 Hs=0.5 climb GP_Doppler_ignore_buoy: 24.68ms/frame wall 492.1s
+SIGNAL seed=20261044 Hs=1.5 hover: vRMSE 0.0002 m/s, wall 48.7s
+FIT seed=20261044 Hs=1.5 hover GP_noD_q1: 23.26ms/frame wall 60.9s
+FIT seed=20261044 Hs=1.5 hover GP_Doppler_q1: 25.19ms/frame wall 74.0s
+FIT seed=20261044 Hs=1.5 hover GP_noD_q001: 22.76ms/frame wall 86.0s
+FIT seed=20261044 Hs=1.5 hover GP_Doppler_q001: 26.25ms/frame wall 99.5s
+FIT seed=20261044 Hs=1.5 hover GP_Doppler_ignore_buoy: 25.89ms/frame wall 112.9s
+SIGNAL seed=20261044 Hs=1.5 straight: vRMSE 0.5580 m/s, wall 139.5s
+FIT seed=20261044 Hs=1.5 straight GP_noD_q1: 22.95ms/frame wall 151.5s
+FIT seed=20261044 Hs=1.5 straight GP_Doppler_q1: 25.45ms/frame wall 164.7s
+FIT seed=20261044 Hs=1.5 straight GP_noD_q001: 23.04ms/frame wall 176.8s
+FIT seed=20261044 Hs=1.5 straight GP_Doppler_q001: 25.69ms/frame wall 190.1s
+FIT seed=20261044 Hs=1.5 straight GP_Doppler_ignore_buoy: 25.63ms/frame wall 203.3s
+SIGNAL seed=20261044 Hs=1.5 circle: vRMSE 0.0007 m/s, wall 230.2s
+FIT seed=20261044 Hs=1.5 circle GP_noD_q1: 23.06ms/frame wall 242.3s
+FIT seed=20261044 Hs=1.5 circle GP_Doppler_q1: 26.01ms/frame wall 255.7s
+FIT seed=20261044 Hs=1.5 circle GP_noD_q001: 22.76ms/frame wall 267.7s
+FIT seed=20261044 Hs=1.5 circle GP_Doppler_q001: 25.85ms/frame wall 281.1s
+FIT seed=20261044 Hs=1.5 circle GP_Doppler_ignore_buoy: 25.61ms/frame wall 294.4s
+SIGNAL seed=20261044 Hs=1.5 mixed: vRMSE 0.0012 m/s, wall 329.6s
+FIT seed=20261044 Hs=1.5 mixed GP_noD_q1: 23.33ms/frame wall 341.8s
+FIT seed=20261044 Hs=1.5 mixed GP_Doppler_q1: 24.81ms/frame wall 354.6s
+FIT seed=20261044 Hs=1.5 mixed GP_noD_q001: 22.35ms/frame wall 366.4s
+FIT seed=20261044 Hs=1.5 mixed GP_Doppler_q001: 25.42ms/frame wall 379.6s
+FIT seed=20261044 Hs=1.5 mixed GP_Doppler_ignore_buoy: 25.39ms/frame wall 392.8s
+SIGNAL seed=20261044 Hs=1.5 climb: vRMSE 0.3861 m/s, wall 419.6s
+FIT seed=20261044 Hs=1.5 climb GP_noD_q1: 23.29ms/frame wall 431.7s
+FIT seed=20261044 Hs=1.5 climb GP_Doppler_q1: 25.92ms/frame wall 445.1s
+FIT seed=20261044 Hs=1.5 climb GP_noD_q001: 23.23ms/frame wall 457.3s
+FIT seed=20261044 Hs=1.5 climb GP_Doppler_q001: 26.95ms/frame wall 471.2s
+FIT seed=20261044 Hs=1.5 climb GP_Doppler_ignore_buoy: 26.44ms/frame wall 485.2s
+SEED 2/5 complete
+SIGNAL seed=20261045 Hs=0.5 hover: vRMSE 0.0002 m/s, wall 49.8s
+FIT seed=20261045 Hs=0.5 hover GP_noD_q1: 24.69ms/frame wall 62.7s
+FIT seed=20261045 Hs=0.5 hover GP_Doppler_q1: 25.64ms/frame wall 76.0s
+FIT seed=20261045 Hs=0.5 hover GP_noD_q001: 23.08ms/frame wall 88.0s
+FIT seed=20261045 Hs=0.5 hover GP_Doppler_q001: 25.56ms/frame wall 101.2s
+FIT seed=20261045 Hs=0.5 hover GP_Doppler_ignore_buoy: 26.67ms/frame wall 115.0s
+SIGNAL seed=20261045 Hs=0.5 straight: vRMSE 0.3915 m/s, wall 141.3s
+FIT seed=20261045 Hs=0.5 straight GP_noD_q1: 22.16ms/frame wall 152.9s
+FIT seed=20261045 Hs=0.5 straight GP_Doppler_q1: 27.01ms/frame wall 166.8s
+FIT seed=20261045 Hs=0.5 straight GP_noD_q001: 24.60ms/frame wall 179.5s
+FIT seed=20261045 Hs=0.5 straight GP_Doppler_q001: 25.38ms/frame wall 192.7s
+FIT seed=20261045 Hs=0.5 straight GP_Doppler_ignore_buoy: 25.76ms/frame wall 206.0s
+SIGNAL seed=20261045 Hs=0.5 circle: vRMSE 0.0007 m/s, wall 232.7s
+FIT seed=20261045 Hs=0.5 circle GP_noD_q1: 23.28ms/frame wall 244.8s
+FIT seed=20261045 Hs=0.5 circle GP_Doppler_q1: 25.69ms/frame wall 258.0s
+FIT seed=20261045 Hs=0.5 circle GP_noD_q001: 22.58ms/frame wall 269.9s
+FIT seed=20261045 Hs=0.5 circle GP_Doppler_q001: 25.43ms/frame wall 283.0s
+FIT seed=20261045 Hs=0.5 circle GP_Doppler_ignore_buoy: 25.23ms/frame wall 296.2s
+SIGNAL seed=20261045 Hs=0.5 mixed: vRMSE 0.0012 m/s, wall 330.9s
+FIT seed=20261045 Hs=0.5 mixed GP_noD_q1: 23.42ms/frame wall 343.3s
+FIT seed=20261045 Hs=0.5 mixed GP_Doppler_q1: 25.70ms/frame wall 356.7s
+FIT seed=20261045 Hs=0.5 mixed GP_noD_q001: 24.64ms/frame wall 369.8s
+FIT seed=20261045 Hs=0.5 mixed GP_Doppler_q001: 26.39ms/frame wall 383.6s
+FIT seed=20261045 Hs=0.5 mixed GP_Doppler_ignore_buoy: 25.65ms/frame wall 397.1s
+SIGNAL seed=20261045 Hs=0.5 climb: vRMSE 0.6010 m/s, wall 424.2s
+FIT seed=20261045 Hs=0.5 climb GP_noD_q1: 23.69ms/frame wall 436.7s
+FIT seed=20261045 Hs=0.5 climb GP_Doppler_q1: 25.64ms/frame wall 450.0s
+FIT seed=20261045 Hs=0.5 climb GP_noD_q001: 22.67ms/frame wall 462.0s
+FIT seed=20261045 Hs=0.5 climb GP_Doppler_q001: 25.74ms/frame wall 475.4s
+FIT seed=20261045 Hs=0.5 climb GP_Doppler_ignore_buoy: 25.84ms/frame wall 488.8s
+SIGNAL seed=20261045 Hs=1.5 hover: vRMSE 0.0002 m/s, wall 49.2s
+FIT seed=20261045 Hs=1.5 hover GP_noD_q1: 23.25ms/frame wall 61.4s
+FIT seed=20261045 Hs=1.5 hover GP_Doppler_q1: 25.06ms/frame wall 74.5s
+FIT seed=20261045 Hs=1.5 hover GP_noD_q001: 23.40ms/frame wall 87.1s
+FIT seed=20261045 Hs=1.5 hover GP_Doppler_q001: 26.71ms/frame wall 101.0s
+FIT seed=20261045 Hs=1.5 hover GP_Doppler_ignore_buoy: 25.16ms/frame wall 114.2s
+SIGNAL seed=20261045 Hs=1.5 straight: vRMSE 0.5851 m/s, wall 141.8s
+FIT seed=20261045 Hs=1.5 straight GP_noD_q1: 22.46ms/frame wall 153.7s
+FIT seed=20261045 Hs=1.5 straight GP_Doppler_q1: 24.69ms/frame wall 166.7s
+FIT seed=20261045 Hs=1.5 straight GP_noD_q001: 22.92ms/frame wall 178.8s
+FIT seed=20261045 Hs=1.5 straight GP_Doppler_q001: 24.91ms/frame wall 191.9s
+FIT seed=20261045 Hs=1.5 straight GP_Doppler_ignore_buoy: 24.61ms/frame wall 204.9s
+SIGNAL seed=20261045 Hs=1.5 circle: vRMSE 0.0007 m/s, wall 231.8s
+FIT seed=20261045 Hs=1.5 circle GP_noD_q1: 22.93ms/frame wall 244.0s
+FIT seed=20261045 Hs=1.5 circle GP_Doppler_q1: 25.89ms/frame wall 257.5s
+FIT seed=20261045 Hs=1.5 circle GP_noD_q001: 23.40ms/frame wall 269.8s
+FIT seed=20261045 Hs=1.5 circle GP_Doppler_q001: 25.84ms/frame wall 283.3s
+FIT seed=20261045 Hs=1.5 circle GP_Doppler_ignore_buoy: 25.58ms/frame wall 296.8s
+SIGNAL seed=20261045 Hs=1.5 mixed: vRMSE 0.0012 m/s, wall 333.2s
+FIT seed=20261045 Hs=1.5 mixed GP_noD_q1: 23.98ms/frame wall 345.9s
+FIT seed=20261045 Hs=1.5 mixed GP_Doppler_q1: 25.82ms/frame wall 359.4s
+FIT seed=20261045 Hs=1.5 mixed GP_noD_q001: 23.22ms/frame wall 371.7s
+FIT seed=20261045 Hs=1.5 mixed GP_Doppler_q001: 25.57ms/frame wall 385.0s
+FIT seed=20261045 Hs=1.5 mixed GP_Doppler_ignore_buoy: 26.05ms/frame wall 398.7s
+SIGNAL seed=20261045 Hs=1.5 climb: vRMSE 0.5719 m/s, wall 425.6s
+FIT seed=20261045 Hs=1.5 climb GP_noD_q1: 22.93ms/frame wall 437.7s
+FIT seed=20261045 Hs=1.5 climb GP_Doppler_q1: 26.24ms/frame wall 451.4s
+FIT seed=20261045 Hs=1.5 climb GP_noD_q001: 22.73ms/frame wall 463.4s
+FIT seed=20261045 Hs=1.5 climb GP_Doppler_q001: 25.60ms/frame wall 476.8s
+FIT seed=20261045 Hs=1.5 climb GP_Doppler_ignore_buoy: 26.10ms/frame wall 490.4s
+SEED 3/5 complete
+SIGNAL seed=20261046 Hs=0.5 hover: vRMSE 0.0002 m/s, wall 49.3s
+FIT seed=20261046 Hs=0.5 hover GP_noD_q1: 22.92ms/frame wall 61.4s
+FIT seed=20261046 Hs=0.5 hover GP_Doppler_q1: 25.76ms/frame wall 74.8s
+FIT seed=20261046 Hs=0.5 hover GP_noD_q001: 23.06ms/frame wall 87.1s
+FIT seed=20261046 Hs=0.5 hover GP_Doppler_q001: 25.49ms/frame wall 100.3s
+FIT seed=20261046 Hs=0.5 hover GP_Doppler_ignore_buoy: 25.29ms/frame wall 113.6s
+SIGNAL seed=20261046 Hs=0.5 straight: vRMSE 0.3897 m/s, wall 140.4s
+FIT seed=20261046 Hs=0.5 straight GP_noD_q1: 23.28ms/frame wall 152.6s
+FIT seed=20261046 Hs=0.5 straight GP_Doppler_q1: 26.50ms/frame wall 166.4s
+FIT seed=20261046 Hs=0.5 straight GP_noD_q001: 23.83ms/frame wall 179.0s
+FIT seed=20261046 Hs=0.5 straight GP_Doppler_q001: 25.94ms/frame wall 192.6s
+FIT seed=20261046 Hs=0.5 straight GP_Doppler_ignore_buoy: 25.98ms/frame wall 206.2s
+SIGNAL seed=20261046 Hs=0.5 circle: vRMSE 0.0007 m/s, wall 233.0s
+FIT seed=20261046 Hs=0.5 circle GP_noD_q1: 23.12ms/frame wall 245.4s
+FIT seed=20261046 Hs=0.5 circle GP_Doppler_q1: 26.23ms/frame wall 259.1s
+FIT seed=20261046 Hs=0.5 circle GP_noD_q001: 23.89ms/frame wall 271.6s
+FIT seed=20261046 Hs=0.5 circle GP_Doppler_q001: 24.43ms/frame wall 284.3s
+FIT seed=20261046 Hs=0.5 circle GP_Doppler_ignore_buoy: 24.71ms/frame wall 297.1s
+SIGNAL seed=20261046 Hs=0.5 mixed: vRMSE 0.0012 m/s, wall 330.5s
+FIT seed=20261046 Hs=0.5 mixed GP_noD_q1: 22.30ms/frame wall 342.3s
+FIT seed=20261046 Hs=0.5 mixed GP_Doppler_q1: 24.57ms/frame wall 355.1s
+FIT seed=20261046 Hs=0.5 mixed GP_noD_q001: 21.35ms/frame wall 366.4s
+FIT seed=20261046 Hs=0.5 mixed GP_Doppler_q001: 27.43ms/frame wall 380.6s
+FIT seed=20261046 Hs=0.5 mixed GP_Doppler_ignore_buoy: 25.04ms/frame wall 393.8s
+SIGNAL seed=20261046 Hs=0.5 climb: vRMSE 0.6374 m/s, wall 420.2s
+FIT seed=20261046 Hs=0.5 climb GP_noD_q1: 24.60ms/frame wall 433.1s
+FIT seed=20261046 Hs=0.5 climb GP_Doppler_q1: 25.78ms/frame wall 446.5s
+FIT seed=20261046 Hs=0.5 climb GP_noD_q001: 23.01ms/frame wall 458.7s
+FIT seed=20261046 Hs=0.5 climb GP_Doppler_q001: 25.55ms/frame wall 472.0s
+FIT seed=20261046 Hs=0.5 climb GP_Doppler_ignore_buoy: 25.42ms/frame wall 485.3s
+SIGNAL seed=20261046 Hs=1.5 hover: vRMSE 0.0002 m/s, wall 49.1s
+FIT seed=20261046 Hs=1.5 hover GP_noD_q1: 23.06ms/frame wall 61.3s
+FIT seed=20261046 Hs=1.5 hover GP_Doppler_q1: 25.98ms/frame wall 74.9s
+FIT seed=20261046 Hs=1.5 hover GP_noD_q001: 23.13ms/frame wall 87.1s
+FIT seed=20261046 Hs=1.5 hover GP_Doppler_q001: 24.53ms/frame wall 99.9s
+FIT seed=20261046 Hs=1.5 hover GP_Doppler_ignore_buoy: 24.78ms/frame wall 112.9s
+SIGNAL seed=20261046 Hs=1.5 straight: vRMSE 0.6234 m/s, wall 140.3s
+FIT seed=20261046 Hs=1.5 straight GP_noD_q1: 23.56ms/frame wall 153.0s
+FIT seed=20261046 Hs=1.5 straight GP_Doppler_q1: 26.59ms/frame wall 166.9s
+FIT seed=20261046 Hs=1.5 straight GP_noD_q001: 22.29ms/frame wall 178.8s
+FIT seed=20261046 Hs=1.5 straight GP_Doppler_q001: 25.40ms/frame wall 192.0s
+FIT seed=20261046 Hs=1.5 straight GP_Doppler_ignore_buoy: 24.03ms/frame wall 204.5s
+SIGNAL seed=20261046 Hs=1.5 circle: vRMSE 0.0007 m/s, wall 230.8s
+FIT seed=20261046 Hs=1.5 circle GP_noD_q1: 22.23ms/frame wall 242.5s
+FIT seed=20261046 Hs=1.5 circle GP_Doppler_q1: 26.21ms/frame wall 256.0s
+FIT seed=20261046 Hs=1.5 circle GP_noD_q001: 22.41ms/frame wall 268.0s
+FIT seed=20261046 Hs=1.5 circle GP_Doppler_q001: 25.85ms/frame wall 281.4s
+FIT seed=20261046 Hs=1.5 circle GP_Doppler_ignore_buoy: 24.63ms/frame wall 294.2s
+SIGNAL seed=20261046 Hs=1.5 mixed: vRMSE 0.0012 m/s, wall 330.3s
+FIT seed=20261046 Hs=1.5 mixed GP_noD_q1: 22.11ms/frame wall 342.0s
+FIT seed=20261046 Hs=1.5 mixed GP_Doppler_q1: 24.56ms/frame wall 354.9s
+FIT seed=20261046 Hs=1.5 mixed GP_noD_q001: 21.56ms/frame wall 366.3s
+FIT seed=20261046 Hs=1.5 mixed GP_Doppler_q001: 27.26ms/frame wall 380.4s
+FIT seed=20261046 Hs=1.5 mixed GP_Doppler_ignore_buoy: 26.13ms/frame wall 394.1s
+SIGNAL seed=20261046 Hs=1.5 climb: vRMSE 0.5075 m/s, wall 419.6s
+FIT seed=20261046 Hs=1.5 climb GP_noD_q1: 21.91ms/frame wall 431.2s
+FIT seed=20261046 Hs=1.5 climb GP_Doppler_q1: 24.55ms/frame wall 444.0s
+FIT seed=20261046 Hs=1.5 climb GP_noD_q001: 22.02ms/frame wall 455.6s
+FIT seed=20261046 Hs=1.5 climb GP_Doppler_q001: 24.43ms/frame wall 468.3s
+FIT seed=20261046 Hs=1.5 climb GP_Doppler_ignore_buoy: 24.08ms/frame wall 480.8s
+SEED 4/5 complete
+SIGNAL seed=20261047 Hs=0.5 hover: vRMSE 0.0002 m/s, wall 47.1s
+FIT seed=20261047 Hs=0.5 hover GP_noD_q1: 21.87ms/frame wall 58.6s
+FIT seed=20261047 Hs=0.5 hover GP_Doppler_q1: 24.28ms/frame wall 71.3s
+FIT seed=20261047 Hs=0.5 hover GP_noD_q001: 21.57ms/frame wall 82.7s
+FIT seed=20261047 Hs=0.5 hover GP_Doppler_q001: 24.49ms/frame wall 95.4s
+FIT seed=20261047 Hs=0.5 hover GP_Doppler_ignore_buoy: 24.17ms/frame wall 108.1s
+SIGNAL seed=20261047 Hs=0.5 straight: vRMSE 0.4884 m/s, wall 133.8s
+FIT seed=20261047 Hs=0.5 straight GP_noD_q1: 21.78ms/frame wall 145.3s
+FIT seed=20261047 Hs=0.5 straight GP_Doppler_q1: 24.39ms/frame wall 158.1s
+FIT seed=20261047 Hs=0.5 straight GP_noD_q001: 23.63ms/frame wall 170.5s
+FIT seed=20261047 Hs=0.5 straight GP_Doppler_q001: 24.78ms/frame wall 183.5s
+FIT seed=20261047 Hs=0.5 straight GP_Doppler_ignore_buoy: 25.20ms/frame wall 196.6s
+SIGNAL seed=20261047 Hs=0.5 circle: vRMSE 0.0007 m/s, wall 221.9s
+FIT seed=20261047 Hs=0.5 circle GP_noD_q1: 21.82ms/frame wall 233.4s
+FIT seed=20261047 Hs=0.5 circle GP_Doppler_q1: 24.27ms/frame wall 246.0s
+FIT seed=20261047 Hs=0.5 circle GP_noD_q001: 21.22ms/frame wall 257.4s
+FIT seed=20261047 Hs=0.5 circle GP_Doppler_q001: 23.91ms/frame wall 269.8s
+FIT seed=20261047 Hs=0.5 circle GP_Doppler_ignore_buoy: 23.89ms/frame wall 282.2s
+SIGNAL seed=20261047 Hs=0.5 mixed: vRMSE 0.0012 m/s, wall 315.9s
+FIT seed=20261047 Hs=0.5 mixed GP_noD_q1: 21.81ms/frame wall 327.5s
+FIT seed=20261047 Hs=0.5 mixed GP_Doppler_q1: 23.61ms/frame wall 339.9s
+FIT seed=20261047 Hs=0.5 mixed GP_noD_q001: 21.65ms/frame wall 351.3s
+FIT seed=20261047 Hs=0.5 mixed GP_Doppler_q001: 24.76ms/frame wall 364.2s
+FIT seed=20261047 Hs=0.5 mixed GP_Doppler_ignore_buoy: 24.17ms/frame wall 376.8s
+SIGNAL seed=20261047 Hs=0.5 climb: vRMSE 0.5743 m/s, wall 402.0s
+FIT seed=20261047 Hs=0.5 climb GP_noD_q1: 21.73ms/frame wall 413.5s
+FIT seed=20261047 Hs=0.5 climb GP_Doppler_q1: 24.47ms/frame wall 426.2s
+FIT seed=20261047 Hs=0.5 climb GP_noD_q001: 21.55ms/frame wall 437.5s
+FIT seed=20261047 Hs=0.5 climb GP_Doppler_q001: 24.04ms/frame wall 450.1s
+FIT seed=20261047 Hs=0.5 climb GP_Doppler_ignore_buoy: 24.20ms/frame wall 462.7s
+SIGNAL seed=20261047 Hs=1.5 hover: vRMSE 0.0002 m/s, wall 46.9s
+FIT seed=20261047 Hs=1.5 hover GP_noD_q1: 21.70ms/frame wall 58.4s
+FIT seed=20261047 Hs=1.5 hover GP_Doppler_q1: 24.27ms/frame wall 71.1s
+FIT seed=20261047 Hs=1.5 hover GP_noD_q001: 21.46ms/frame wall 82.5s
+FIT seed=20261047 Hs=1.5 hover GP_Doppler_q001: 23.86ms/frame wall 94.9s
+FIT seed=20261047 Hs=1.5 hover GP_Doppler_ignore_buoy: 24.01ms/frame wall 107.5s
+SIGNAL seed=20261047 Hs=1.5 straight: vRMSE 0.5161 m/s, wall 132.6s
+FIT seed=20261047 Hs=1.5 straight GP_noD_q1: 21.39ms/frame wall 143.9s
+FIT seed=20261047 Hs=1.5 straight GP_Doppler_q1: 24.16ms/frame wall 156.5s
+FIT seed=20261047 Hs=1.5 straight GP_noD_q001: 21.43ms/frame wall 167.9s
+FIT seed=20261047 Hs=1.5 straight GP_Doppler_q001: 25.30ms/frame wall 181.1s
+FIT seed=20261047 Hs=1.5 straight GP_Doppler_ignore_buoy: 24.31ms/frame wall 193.7s
+SIGNAL seed=20261047 Hs=1.5 circle: vRMSE 0.0007 m/s, wall 220.2s
+FIT seed=20261047 Hs=1.5 circle GP_noD_q1: 22.88ms/frame wall 232.2s
+FIT seed=20261047 Hs=1.5 circle GP_Doppler_q1: 25.07ms/frame wall 245.3s
+FIT seed=20261047 Hs=1.5 circle GP_noD_q001: 22.13ms/frame wall 257.0s
+FIT seed=20261047 Hs=1.5 circle GP_Doppler_q001: 25.28ms/frame wall 270.2s
+FIT seed=20261047 Hs=1.5 circle GP_Doppler_ignore_buoy: 24.99ms/frame wall 283.3s
+SIGNAL seed=20261047 Hs=1.5 mixed: vRMSE 0.0012 m/s, wall 319.0s
+FIT seed=20261047 Hs=1.5 mixed GP_noD_q1: 23.33ms/frame wall 331.4s
+FIT seed=20261047 Hs=1.5 mixed GP_Doppler_q1: 26.00ms/frame wall 345.0s
+FIT seed=20261047 Hs=1.5 mixed GP_noD_q001: 23.51ms/frame wall 357.6s
+FIT seed=20261047 Hs=1.5 mixed GP_Doppler_q001: 25.77ms/frame wall 371.0s
+FIT seed=20261047 Hs=1.5 mixed GP_Doppler_ignore_buoy: 25.83ms/frame wall 384.6s
+SIGNAL seed=20261047 Hs=1.5 climb: vRMSE 0.5275 m/s, wall 411.6s
+FIT seed=20261047 Hs=1.5 climb GP_noD_q1: 23.89ms/frame wall 424.2s
+FIT seed=20261047 Hs=1.5 climb GP_Doppler_q1: 25.95ms/frame wall 437.7s
+FIT seed=20261047 Hs=1.5 climb GP_noD_q001: 23.25ms/frame wall 450.1s
+FIT seed=20261047 Hs=1.5 climb GP_Doppler_q001: 26.28ms/frame wall 463.8s
+FIT seed=20261047 Hs=1.5 climb GP_Doppler_ignore_buoy: 25.93ms/frame wall 477.3s
+SEED 5/5 complete

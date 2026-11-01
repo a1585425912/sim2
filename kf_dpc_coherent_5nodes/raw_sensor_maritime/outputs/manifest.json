@@ -1,0 +1,143 @@
+{
+  "status": "completed",
+  "trials": 20,
+  "seeds": [
+    20261028,
+    20261029,
+    20261030,
+    20261031,
+    20261032,
+    20261033,
+    20261034,
+    20261035,
+    20261036,
+    20261037,
+    20261038,
+    20261039,
+    20261040,
+    20261041,
+    20261042,
+    20261043,
+    20261044,
+    20261045,
+    20261046,
+    20261047
+  ],
+  "configs": [
+    {
+      "nodes": 20,
+      "duration": 90.0,
+      "frame_budget_s": 0.2,
+      "dt": 0.2,
+      "imu_dt": 0.02,
+      "hs": 0.5,
+      "tp": 6.0,
+      "wave_components": 48,
+      "wave_gamma": 3.3,
+      "sea_depth": 50.0,
+      "mean_current": [
+        0.3,
+        0.1,
+        0.0
+      ],
+      "slow_velocity_std": 0.05,
+      "gnss_range_std": 0.3,
+      "accelerometer_density": 0.015,
+      "gyro_density": 0.0003,
+      "accelerometer_bias_std": 0.03,
+      "gyro_bias_std": 0.001,
+      "accelerometer_bias_rw": 0.0003,
+      "gyro_bias_rw": 1e-05,
+      "clock_stationary_std": 30.0,
+      "clock_tau": 30.0,
+      "clock_filter_rw": 10.0,
+      "mag_std": 0.15,
+      "magnetic_world": [
+        20.0,
+        0.0,
+        -45.0
+      ],
+      "range_std": 0.8,
+      "angle_std_deg": 0.35,
+      "processing_s": 0.012,
+      "rounds": 25,
+      "round_s": 0.005,
+      "slot_s": 0.04,
+      "slot_samples": 9,
+      "total_power": 1.0,
+      "frequencies_mhz": [
+        300.0,
+        1000.0
+      ]
+    },
+    {
+      "nodes": 20,
+      "duration": 90.0,
+      "frame_budget_s": 0.2,
+      "dt": 0.2,
+      "imu_dt": 0.02,
+      "hs": 1.5,
+      "tp": 6.0,
+      "wave_components": 48,
+      "wave_gamma": 3.3,
+      "sea_depth": 50.0,
+      "mean_current": [
+        0.3,
+        0.1,
+        0.0
+      ],
+      "slow_velocity_std": 0.05,
+      "gnss_range_std": 0.3,
+      "accelerometer_density": 0.015,
+      "gyro_density": 0.0003,
+      "accelerometer_bias_std": 0.03,
+      "gyro_bias_std": 0.001,
+      "accelerometer_bias_rw": 0.0003,
+      "gyro_bias_rw": 1e-05,
+      "clock_stationary_std": 30.0,
+      "clock_tau": 30.0,
+      "clock_filter_rw": 10.0,
+      "mag_std": 0.15,
+      "magnetic_world": [
+        20.0,
+        0.0,
+        -45.0
+      ],
+      "range_std": 0.8,
+      "angle_std_deg": 0.35,
+      "processing_s": 0.012,
+      "rounds": 25,
+      "round_s": 0.005,
+      "slot_s": 0.04,
+      "slot_samples": 9,
+      "total_power": 1.0,
+      "frequencies_mhz": [
+        300.0,
+        1000.0
+      ]
+    }
+  ],
+  "elapsed_s": 568.6554096000036,
+  "python": "3.12.8 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:48:34) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "2.0.1",
+  "source_sha256": {
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\estimation.py": "2635db2fb472d4bc250f01c1edb669804e79d56338dd3bd3838290374e4ac500",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\physics.py": "c451be4553f75660426166043cc684e2526792ec3a93b059ce48741d0015f4b7",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\report.py": "9bb12bcffbfd7209c30f8a16e7bdfc07a6a3bb548a8dbec6ed97a4af05c397f5",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\run_full.py": "0ccec1d5d3397a4cfbb33ace42eeb479299eb6d13b2ade435c8d1c56ecc1da9e",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\target.py": "42e50e53ff21f2f23706a6ba9010cf97480665580bc358b28d55e01508129681",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_dpc\\imm_filter.py": "fe5ed6ad44f54da0126a265336c47221b07c71499116f85241a506a2204e2f72",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_ci\\fusion.py": "50b6d1cb09cd491cd0a842f060d27bd95c1ec5b27a90eceac4a86d377e8425a0",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_dpc\\run_experiment.py": "842102f6e5cad50aa03bb13dea3109c3a35e801b8afc3caed2f922f5451cbb81",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\gm_dpc_unified\\experiment.py": "91d23216bbd89f0d6e15c9f13bbd9301e0fcd79c76a1b0d67fec771dfeb37f72"
+  },
+  "definition": "Raw pseudorange+IMU+mag navigation ESKF; raw radar IMM; fixed 25-round DPC/CI; zero levers; no truth initialization, no supplied slow/fast truth; no gating; fixed network total TX power",
+  "limitations": [
+    "Hierarchical navigation/radar fusion, not full joint MAP; temporal pose/target correlation approximated",
+    "Secondary wave filter reuses correlated navigation outputs; its covariance is not used as calibrated joint confidence",
+    "Finite spectral surrogate RAO, not measured hydrodynamics",
+    "GNSS corrected code 0.3m noise with drifting receiver clock; no carrier ambiguity/multipath/ionosphere model",
+    "Ideal RF clock/carrier synchronization; co-located sensor and single isotropic TX per buoy",
+    "Identical assumed processing and network delay, not real-time hardware timing"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "config": {
+    "seed": 20261028,
+    "nodes": 20,
+    "dt": 0.2,
+    "duration": 90.0,
+    "warmup": 5.0,
+    "deployment_radius_m": 100.0,
+    "buoy_height_m": 1.5,
+    "mean_current_mps": [
+      0.3,
+      0.0
+    ],
+    "gm_tau_s": 20.0,
+    "gm_sigma_mps": 0.05,
+    "truth_grid_s": 0.001,
+    "range_std_m": 0.8,
+    "angle_std_deg": 0.35,
+    "acceleration_psd": 0.5,
+    "initial_velocity_std": 20.0,
+    "nav_position_std_m": 0.02,
+    "nav_velocity_std_mps": 0.02,
+    "nav_roll_pitch_std_deg": 0.1,
+    "nav_yaw_std_deg": 0.3,
+    "main_rounds": 25,
+    "processing_s": 0.012,
+    "slot_s": 0.04,
+    "slot_samples": 9,
+    "frame_budget_s": 0.2,
+    "subarray": 2,
+    "subarray_reference_mhz": 300.0,
+    "frequencies_mhz": [
+      300.0,
+      1000.0
+    ],
+    "total_power_w": 1.0
+  },
+  "imm": {
+    "beta": 1.0,
+    "q_hover": 0.01,
+    "q_cv": 0.5,
+    "q_ct": 0.1,
+    "q_omega": 0.0004,
+    "omega_initial_std": 0.25,
+    "switching_rate": 0.05,
+    "initial_velocity_std": 20.0
+  },
+  "trials": 20,
+  "seeds": [
+    20261028,
+    20261047
+  ],
+  "elapsed_s": 138.74261529999967,
+  "source_sha256": {
+    "kf_dpc_coherent_5nodes\\imm_dpc\\imm_filter.py": "95c1701cdb66182419d5b14d2f7000575e05ec895a584bd312a802759f87a89a",
+    "kf_dpc_coherent_5nodes\\imm_dpc\\run_experiment.py": "842102f6e5cad50aa03bb13dea3109c3a35e801b8afc3caed2f922f5451cbb81",
+    "kf_dpc_coherent_5nodes\\gm_dpc_unified\\experiment.py": "91d23216bbd89f0d6e15c9f13bbd9301e0fcd79c76a1b0d67fec771dfeb37f72"
+  },
+  "parameter_policy": "Exploratory fixed parameters; not calibrated or held-out validated",
+  "prediction": "frozen mode over <=177ms; discrete additive CT process noise",
+  "timing": "Assumed identical 12ms processing +25x5ms; hardware and larger payload unvalidated"
+}

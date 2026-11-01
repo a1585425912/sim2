@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "records": 12800,
+  "expected_records": 12800,
+  "nav_records": 40,
+  "source_matches": {
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\estimation.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\physics.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\report.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\run_full.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\target.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_dpc\\imm_filter.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_ci\\fusion.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_dpc\\run_experiment.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\gm_dpc_unified\\experiment.py": true
+  },
+  "figures": [
+    "buoy_navigation.png",
+    "coherent_curves.png",
+    "overview.png",
+    "trajectories_3d.png",
+    "xyz_mixed.png"
+  ]
+}

@@ -21,24 +21,13 @@ def wrap_to_2pi(x: np.ndarray) -> np.ndarray:
 
 
 def apply_polarity_correction(x: np.ndarray) -> np.ndarray:
-    """Apply an ideal 0/pi polarity choice and return phase in [-pi/2, pi/2).
-
-    This models a transmitter that may reverse the signal polarity after the
-    ordinary phase command has been formed.  It is a modulo-pi operation, not
-    an artificial clipping of large phase errors.
-    """
-    values = np.asarray(x, dtype=float)
-    return (values + np.pi / 2.0) % np.pi - np.pi / 2.0
+    """Retired oracle API: truth-dependent polarity control is not executable."""
+    raise ValueError("oracle polarity correction removed; supply an estimated phase command")
 
 
 def effective_phase_errors(theta: np.ndarray, phi_true: np.ndarray, eps: np.ndarray) -> np.ndarray:
-    """Return residual phase after an ideal 0/pi polarity choice.
-
-    The raw residual is first wrapped to [-pi, pi), then folded modulo pi into
-    [-pi/2, pi/2).  Folding is not clipping: a node may reverse its signal
-    polarity, which is equivalent to adding pi to its phase command.
-    """
-    return apply_polarity_correction(wrap_to_pi(np.asarray(theta) - np.asarray(phi_true) + np.asarray(eps)))
+    """Actual residual, wrapped modulo 2*pi for reporting only."""
+    return wrap_to_pi(np.asarray(theta) - np.asarray(phi_true) + np.asarray(eps))
 
 
 def sample_phase_std(phases: np.ndarray) -> float:
@@ -110,6 +99,18 @@ def consensus_linear(W: np.ndarray, X: np.ndarray, steps: int) -> np.ndarray:
 
 
 def power_from_theta(theta: np.ndarray, phi_true: np.ndarray, amp: np.ndarray, eps: np.ndarray) -> float:
-    """根据理想 0/pi 极性选择后的残余相位计算 UAV 合成功率。"""
-    residual = effective_phase_errors(theta, phi_true, eps)
+    """Actual received field power; never fold residual phases modulo pi."""
+    residual = np.asarray(theta) - np.asarray(phi_true) + np.asarray(eps)
     return float(np.abs(np.sum(amp * np.exp(1j * residual))) ** 2)
+
+
+def weights_from_adjacency(adjacency: np.ndarray) -> np.ndarray:
+    """Metropolis weights for observed symmetric links, including isolates."""
+    A = np.asarray(adjacency, dtype=bool).copy()
+    if A.ndim != 2 or A.shape[0] != A.shape[1] or not np.array_equal(A, A.T):
+        raise ValueError("adjacency must be square and symmetric")
+    np.fill_diagonal(A, False)
+    degree = A.sum(axis=1)
+    W = A / (1 + np.maximum(degree[:, None], degree[None, :]))
+    W[np.diag_indices(len(A))] = 1 - W.sum(axis=1)
+    return W

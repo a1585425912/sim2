@@ -1,0 +1,143 @@
+{
+  "status": "completed",
+  "trials": 5,
+  "seeds": [
+    20261043,
+    20261044,
+    20261045,
+    20261046,
+    20261047
+  ],
+  "configs": [
+    {
+      "nodes": 20,
+      "duration": 90.0,
+      "frame_budget_s": 0.2,
+      "dt": 0.2,
+      "imu_dt": 0.02,
+      "hs": 0.5,
+      "tp": 6.0,
+      "wave_components": 48,
+      "wave_gamma": 3.3,
+      "sea_depth": 50.0,
+      "mean_current": [
+        0.3,
+        0.1,
+        0.0
+      ],
+      "slow_velocity_std": 0.05,
+      "gnss_range_std": 0.3,
+      "accelerometer_density": 0.015,
+      "gyro_density": 0.0003,
+      "accelerometer_bias_std": 0.03,
+      "gyro_bias_std": 0.001,
+      "accelerometer_bias_rw": 0.0003,
+      "gyro_bias_rw": 1e-05,
+      "clock_stationary_std": 30.0,
+      "clock_tau": 30.0,
+      "clock_filter_rw": 10.0,
+      "mag_std": 0.15,
+      "magnetic_world": [
+        20.0,
+        0.0,
+        -45.0
+      ],
+      "range_std": 0.8,
+      "angle_std_deg": 0.35,
+      "processing_s": 0.012,
+      "rounds": 25,
+      "round_s": 0.005,
+      "slot_s": 0.04,
+      "slot_samples": 9,
+      "total_power": 1.0,
+      "frequencies_mhz": [
+        300.0,
+        1000.0
+      ]
+    },
+    {
+      "nodes": 20,
+      "duration": 90.0,
+      "frame_budget_s": 0.2,
+      "dt": 0.2,
+      "imu_dt": 0.02,
+      "hs": 1.5,
+      "tp": 6.0,
+      "wave_components": 48,
+      "wave_gamma": 3.3,
+      "sea_depth": 50.0,
+      "mean_current": [
+        0.3,
+        0.1,
+        0.0
+      ],
+      "slow_velocity_std": 0.05,
+      "gnss_range_std": 0.3,
+      "accelerometer_density": 0.015,
+      "gyro_density": 0.0003,
+      "accelerometer_bias_std": 0.03,
+      "gyro_bias_std": 0.001,
+      "accelerometer_bias_rw": 0.0003,
+      "gyro_bias_rw": 1e-05,
+      "clock_stationary_std": 30.0,
+      "clock_tau": 30.0,
+      "clock_filter_rw": 10.0,
+      "mag_std": 0.15,
+      "magnetic_world": [
+        20.0,
+        0.0,
+        -45.0
+      ],
+      "range_std": 0.8,
+      "angle_std_deg": 0.35,
+      "processing_s": 0.012,
+      "rounds": 25,
+      "round_s": 0.005,
+      "slot_s": 0.04,
+      "slot_samples": 9,
+      "total_power": 1.0,
+      "frequencies_mhz": [
+        300.0,
+        1000.0
+      ]
+    }
+  ],
+  "gp": {
+    "window": 11,
+    "iterations": 3,
+    "jerk_psd": 1.0,
+    "initial_position_std": 10000.0,
+    "initial_velocity_std": 100.0,
+    "initial_acceleration_std": 10.0
+  },
+  "elapsed_s": 1913.14638749999,
+  "source_sha256": {
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\adaptive.py": "23e98a7079699a63abad65e6f3693f6f1655a8726dd6ad5c4eb6b5feb18f0a1d",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\checkpoint_prefix.py": "a49fa5acc60c4f2cdd4bd5250e797ea11e42dc121a91ff86393df5da0e7bc430",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\merge.py": "950fd9faced9409b283b115a1317d9ad6f641022daa76779ef87a940cf45c500",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\merge_adaptive.py": "1722e81c34d363a64df30d95eb8ac3a0df970f53b5389b91ac3c02494f612bbc",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\navigation.py": "07816a2fc2ea26e652538ec25c7a70d257aec0918c747cca67e565ea85f3ead1",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\report.py": "ccb44c27a5e2dccea87dfe3d0fdad56fd8c5c3d8d77635df4925eee628b833c3",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\run_adaptive.py": "6ff2bac946c67e265c24956e9b8e6248f049945c9ff8f016ef3b2a26c7b2d56f",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\run_joint.py": "0aed8a8e3c8bb625c8910416b491f8af604621a4daad46a3bdf5b183e0dc8352",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\sequential.py": "b1f204a3b3309ca7403de8fa6a96e56c2466ed1689e268bd965440011356c711",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\solver.py": "f0dd78ae408f787740d38617c4e85ff8049578063391a334356219bfc4df6c40",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\physics.py": "c451be4553f75660426166043cc684e2526792ec3a93b059ce48741d0015f4b7",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\estimation.py": "2635db2fb472d4bc250f01c1edb669804e79d56338dd3bd3838290374e4ac500",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\target.py": "42e50e53ff21f2f23706a6ba9010cf97480665580bc358b28d55e01508129681",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\run_full.py": "0ccec1d5d3397a4cfbb33ace42eeb479299eb6d13b2ade435c8d1c56ecc1da9e",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_dpc\\imm_filter.py": "fe5ed6ad44f54da0126a265336c47221b07c71499116f85241a506a2204e2f72",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_ci\\fusion.py": "50b6d1cb09cd491cd0a842f060d27bd95c1ec5b27a90eceac4a86d377e8425a0"
+  },
+  "baseline_checks": [],
+  "python": "3.12.8 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:48:34) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "2.0.1",
+  "methods": [
+    "IMM_CI_linear",
+    "GP_independent_nav",
+    "JointGP_linear",
+    "JointGP_accel",
+    "JointGP_power"
+  ],
+  "boundary": "Centralized joint finite-history MAP, not finite-round distributed GP; same raw sensors/seeds, no post-hoc smoothing, no gating. Communication/CPU timing assumed, measured compute reported. Power variant maximizes Gaussian-posterior expected RX power with variable per-node power and fixed total, not guaranteed actual global optimum."
+}

@@ -1,0 +1,39 @@
+{
+  "baseline_files_unchanged": [
+    "dfpc_experiment/__init__.py",
+    "dfpc_experiment/sim_core.py",
+    "position_only_velocity_demo/model.py",
+    "kf_dpc_coherent_5nodes/pipeline.py",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/experiment.py",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/report.py",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/RESULTS.md",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/config.json",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/eta_time.png",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/eta_time.svg",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/first_seed.npz",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/geometry_xy.png",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/geometry_xy.svg",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/rounds_scan.png",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/rounds_scan.svg",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/tracking_per_seed.csv",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/tracking_summary.csv",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/transmit_per_seed.csv",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/transmit_summary.csv",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/velocity_xyz.png",
+    "kf_dpc_coherent_5nodes/gm_dpc_unified/outputs/velocity_xyz.svg"
+  ],
+  "tests": "5 unittest checks passed",
+  "full_repository_scope": "Includes extensive pre-existing archival moves and untracked historical files; not attributable to this implementation",
+  "authorized_scope": "imm_dpc only; generated CSV/NPZ/PNG/JSON/report artifacts",
+  "caveats": [
+    "Exploratory parameters, not held-out calibrated",
+    "CT discrete process-noise approximation",
+    "Hardware timing and communication payload not validated"
+  ],
+  "trials": 20,
+  "raw_rows": 7200,
+  "elapsed_s": 138.74261529999967,
+  "source_hashes_verified": true,
+  "baseline_first_seed_eta_max_abs_difference": 3.33e-15,
+  "all_eta_finite_and_bounded": true
+}

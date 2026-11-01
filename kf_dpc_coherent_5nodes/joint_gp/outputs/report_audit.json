@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "records": 44800,
+  "seeds": 20,
+  "source_matches": {
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\adaptive.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\checkpoint_prefix.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\merge.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\merge_adaptive.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\navigation.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\report.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\run_adaptive.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\run_joint.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\sequential.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\solver.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\physics.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\estimation.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\target.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\run_full.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_dpc\\imm_filter.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_ci\\fusion.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\correct_baseline.py": true,
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\apply_correction.py": true
+  },
+  "baseline_max_state_difference": 0.0,
+  "figures": [
+    "coherent_curves.png",
+    "coherent_timing.png",
+    "mixed_errors_readable.png",
+    "overview.png",
+    "trajectories_3d.png",
+    "xyz_mixed.png"
+  ]
+}

@@ -1,96 +1,41 @@
-# UAV DPC 模块化实验项目
+# 动态浮标联合观测UAV与相干发射仿真
 
-这是从原实验中独立迁移出来的新项目，代码只依赖本目录内的 `dfpc_experiment` 包，不再引用旧的实验文件夹。
+FMCW距离率补充实验位于 `kf_dpc_coherent_5nodes/fmcw_doppler/`，完整20种子批次已结束：从复数回波ADC全图选峰得到相对径向速度，比较联合浮标速度、忽略浮标速度、两档运动先验及无多普勒对照。THEORY.md给出正式来源和推导，RESULTS.md为全部统计，ANALYSIS.md解释收益与失败。悬停/圆周/混合改善明确，但直线/爬升远段异常造成退化，实时性和1GHz高相干仍未解决，不作为全场景最终默认方案。
 
-## 目录结构
+此前连续轨迹研究位于 `kf_dpc_coherent_5nodes/joint_gp/`：连续时间GP动力学、持久联合到达因子、导航—目标交叉相关、T-Trend重尾过程及完整20种子对照。正式结果见其RESULTS.md，结论解读见ANALYSIS.md，具体推导与正式论文来源见RESEARCH.md、T_TREND.md。研究保留退化结果，不代表已同时解决抖动、机动与高相干问题，也未将新方法设为最终有效估计器。
 
-- `dfpc_experiment/config.py`：实验参数和命令行接口，优先修改这里。
-- `dfpc_experiment/scenario.py`：UAV、节点位置和观测模型。
-- `dfpc_experiment/trajectory.py`：节点在线估计 UAV 匀速轨迹，并输出位置、速度及协方差。
-- `dfpc_experiment/kalman.py`：UAV 与浮标的批量三维恒速 Kalman 滤波；两者都从 step 0 开始持续递推。
-- `dfpc_experiment/sim_core.py`：从旧仿真文件迁移来的基础数学函数。
-- `dfpc_experiment/experiment.py`：单次完整实验和 Monte Carlo 主循环。
-- `dfpc_experiment/sweeps.py`：敏感性分析实验。
-- `dfpc_experiment/metrics.py`：相位误差、合成功率、相对单节点增益等指标。
-- `dfpc_experiment/plots.py`：绘图函数。
-- `dfpc_experiment/debug_tools.py`：调试输出接口。
-- `dfpc_experiment/run_experiment.py`：运行单组实验。
-- `dfpc_experiment/run_sweeps.py`：运行因素扫描实验。
+传感器驱动基线位于 `kf_dpc_coherent_5nodes/raw_sensor_maritime/`：双时间尺度浮标运动、共享方向谱海浪、原始GNSS伪距/IMU/磁场导航解算、原始雷达CV/IMM、DPC/CI、未来双方运动预测与实际复场评价。暂不考虑杆臂，全部传感器与单个等效发射阵元共位。
 
-## 快速运行
+此版本补齐传感器驱动仿真链路，不将真实导航状态加噪声作为导航解算结果，也不提供真实慢快运动分量给预测器。它仍是分层近似估计，不宣称全局最优联合后验或最大相干增益。正式结果以该目录完整批次的RESULTS.md为准。
+
+## 运行
+
+在本目录执行：
 
 ```powershell
-python uav_dfpc_modular_project\dfpc_experiment\run_experiment.py --device cpu
+python -m pip install -r requirements.txt
+python -u kf_dpc_coherent_5nodes/raw_sensor_maritime/run_full.py --trials 20
+python kf_dpc_coherent_5nodes/raw_sensor_maritime/report.py
 ```
 
-默认浮标中心按固定洋流速度 5 m/s、方向 0° 连续移动；每个时刻产生一次水平单轴标准差为 0.5 m 的随机小位移，其中默认 10% 累积到中心，其余作为当前相对中心的偏移。
-`Ts` 是浮标运动积分步长，`K` 是每个长块的短时间步/共识迭代次数，block 物理时长恒为 `K*Ts`。
-`TL` 仅为兼容旧命令行参数保留，不再参与实验主循环。
-所有 DPC 距离均由三维坐标计算；当前 UAV 高度固定为 120 m、浮标高度固定为 0 m，
-但 KF 状态已保留 `z` 和 `vz`，以后可以直接接入高度变化。
-`K` 只定义浮标运动和输出长块中的物理短步数，不控制 UAV-KF 的启动或重置。
-UAV-KF 在 step 0 由首份位置观测初始化，并保留较大的初始速度不确定度；step 1
-开始使用上一时刻后验执行预测，再融合当前新增位置观测。UAV 轨迹统计跨块累计，
-KF 后验也全程持续递推，每份原始观测只进入一次。
+重跑会更新对应实验outputs中的结果。最新模型推导见 `raw_sensor_maritime/THEORY.md`，接口与假设见其README.md。
 
-运行一个较小的调试实验：
+## 保留内容
 
-```powershell
-python uav_dfpc_modular_project\dfpc_experiment\run_experiment.py --N 100 --mc_trials 2 --T_long 2 --K 5 --device cpu --debug
-```
+- `kf_dpc_coherent_5nodes/joint_gp/`：最新正式文献驱动研究、全部完整与失败实验记录；复现命令见其README.md。
+- `kf_dpc_coherent_5nodes/raw_sensor_maritime/`：原始传感器驱动的新实验。
+- `kf_dpc_coherent_5nodes/imm_ci/`：简化固定姿态条件下IMM+DPC/CI完整对照及结果。
+- `kf_dpc_coherent_5nodes/imm_dpc/`：简化固定姿态条件下CV/CT/IMM完整对照及结果。
+- `kf_dpc_coherent_5nodes/gm_dpc_unified/`：原一阶GM漂移＋六维CV基线、绘图、结果及原始数据。
+- `kf_dpc_coherent_5nodes/pipeline.py`：有限轮DPC公共模块。
+- `position_only_velocity_demo/model.py`：坐标转换与KF公共模块。
+- `dfpc_experiment/sim_core.py`：共识矩阵与共识迭代公共模块。
+- `docs/`：当前模型Markdown与Word文稿。
 
-运行节点数扫描：
+## 版本边界
 
-```powershell
-python uav_dfpc_modular_project\dfpc_experiment\run_sweeps.py --factors node_count --node_count_values 50,100,200 --device cpu
-```
+旧GM统一实验采用六维CV，不能将旧文稿中的七维CT段落当作其代码说明。后来新增的CT/IMM和CI结果分别位于imm_dpc、imm_ci。新原始传感器实验采用20个单阵元浮标，旧统一实验每浮标2×2阵元，且导航假设不同；不可将新旧功率变化解释为单一算法的改善。
 
-扫描海浪均值速度：
+所有当前发射实验仍假设理想载波频相同步，尚未验证实际通信负载与硬件实时延迟。
 
-```powershell
-python uav_dfpc_modular_project\dfpc_experiment\run_sweeps.py --factors wave_speed --wave_speed_values 0.5,1,2,5 --device cpu
-```
-
-使用 Monte Carlo 线性功率平均检查 KF/DPC 频率曲线：
-
-```powershell
-python uav_dfpc_modular_project\dfpc_experiment\run_sweeps.py --factors frequency --frequency_values 30,50,100,150,200,250,300 --mc_trials 50 --device cpu
-```
-
-输出中的 `frequency_dfpc_vs_kf_final_power_db.png` 是与旧版
-`full_sweep_final_power_db.png` 对应的直接对比图。固定米级定位误差在高频下会转成更大相位误差，
-因此高频功率下降是正常物理结果；应通过多次 Monte Carlo 平均消除单场景产生的偶然深谷，而不是对结果曲线做后处理平滑。
-
-所有方法默认采用理想 0/pi 极性选择：残余相位按模 pi 折叠到 `[-90, 90) deg`，再进行功率和相位误差统计；这是极性反转的物理等价，不是截断。
-
-调试频率曲线中的偶然回升：
-
-```powershell
-python uav_dfpc_modular_project\dfpc_experiment\run_sweeps.py `
-  --factors frequency `
-  --frequency_values 30,50,100,150,200,250,300 `
-  --mc_trials 20 `
-  --rebound_threshold_db 0.5 `
-  --debug `
-  --debug_trial 0 `
-  --debug_blocks=-1 `
-  --debug_iterations=-1 `
-  --debug_max_nodes 32 `
-  --device cpu
-```
-
-主要诊断文件：
-
-- `frequency_rebound_events.csv`：相邻频率回升、主导 trial seed 和自动原因分类；
-- `frequency_trial_diagnostics.csv`：每个频率、每个 trial 的 final/tail 统计；
-- `frequency_block_trial_diagnostics.csv`：继续定位到具体物理 block；
-- `frequency/point_XX/debug/debug_node_samples.csv`：指定 trial/block 下逐节点三维坐标、距离误差与残余相位；
-- `frequency_rebound_debug_report.md`：回升事件的人可读索引。
-
-输出默认保存在 `uav_dfpc_modular_project/modular_dfpc_outputs` 下，也可以用 `--out_dir` 指定新位置。
-
-## 已归档实验结果
-
-当前分支已经完成的节点数、连通度、频率、联合网格和版本对比实验，统一整理在
-[`实验结果`](实验结果/README.md) 目录。该目录保留论文分析所需的标准化数据表、关键图和报告，
-并说明各类实验的功率、相位与定位误差口径。
+历史代码与旧实验产物统一归档于 `已废弃/`，仅供追溯，不参与当前实验。归档清单与恢复说明见该目录。外部备份位于 `D:/git/sim2_cleanup_backup_20261030_164626`。

@@ -1,0 +1,105 @@
+  hover GP independent seed=20261028 Hs=0.5; solver mean 2.17ms; elapsed 10.8s
+  hover JOINT seed=20261028 Hs=0.5; solver mean 62.54ms; elapsed 42.6s
+  straight GP independent seed=20261028 Hs=0.5; solver mean 2.06ms; elapsed 48.5s
+  straight JOINT seed=20261028 Hs=0.5; solver mean 62.25ms; elapsed 80.3s
+  circle GP independent seed=20261028 Hs=0.5; solver mean 2.08ms; elapsed 86.2s
+  circle JOINT seed=20261028 Hs=0.5; solver mean 61.92ms; elapsed 117.7s
+  mixed GP independent seed=20261028 Hs=0.5; solver mean 2.15ms; elapsed 123.6s
+  mixed JOINT seed=20261028 Hs=0.5; solver mean 61.43ms; elapsed 155.0s
+  climb GP independent seed=20261028 Hs=0.5; solver mean 2.16ms; elapsed 161.1s
+  climb JOINT seed=20261028 Hs=0.5; solver mean 61.69ms; elapsed 192.6s
+  hover GP independent seed=20261028 Hs=1.5; solver mean 2.42ms; elapsed 10.4s
+  hover JOINT seed=20261028 Hs=1.5; solver mean 60.88ms; elapsed 41.4s
+  straight GP independent seed=20261028 Hs=1.5; solver mean 2.46ms; elapsed 47.2s
+  straight JOINT seed=20261028 Hs=1.5; solver mean 66.05ms; elapsed 80.4s
+  circle GP independent seed=20261028 Hs=1.5; solver mean 2.35ms; elapsed 86.5s
+  circle JOINT seed=20261028 Hs=1.5; solver mean 55.38ms; elapsed 114.8s
+  mixed GP independent seed=20261028 Hs=1.5; solver mean 2.02ms; elapsed 120.0s
+  mixed JOINT seed=20261028 Hs=1.5; solver mean 59.21ms; elapsed 150.0s
+  climb GP independent seed=20261028 Hs=1.5; solver mean 2.43ms; elapsed 155.6s
+  climb JOINT seed=20261028 Hs=1.5; solver mean 57.11ms; elapsed 184.8s
+SEED 1/5 complete 382.0s
+  hover GP independent seed=20261029 Hs=0.5; solver mean 1.98ms; elapsed 9.7s
+  hover JOINT seed=20261029 Hs=0.5; solver mean 54.02ms; elapsed 37.5s
+  straight GP independent seed=20261029 Hs=0.5; solver mean 2.26ms; elapsed 42.7s
+  straight JOINT seed=20261029 Hs=0.5; solver mean 56.15ms; elapsed 71.5s
+  circle GP independent seed=20261029 Hs=0.5; solver mean 2.43ms; elapsed 77.0s
+  circle JOINT seed=20261029 Hs=0.5; solver mean 55.70ms; elapsed 105.5s
+  mixed GP independent seed=20261029 Hs=0.5; solver mean 2.13ms; elapsed 110.7s
+  mixed JOINT seed=20261029 Hs=0.5; solver mean 54.95ms; elapsed 138.8s
+  climb GP independent seed=20261029 Hs=0.5; solver mean 2.04ms; elapsed 143.9s
+  climb JOINT seed=20261029 Hs=0.5; solver mean 54.86ms; elapsed 171.8s
+  hover GP independent seed=20261029 Hs=1.5; solver mean 2.13ms; elapsed 9.3s
+  hover JOINT seed=20261029 Hs=1.5; solver mean 54.58ms; elapsed 37.2s
+  straight GP independent seed=20261029 Hs=1.5; solver mean 2.12ms; elapsed 42.3s
+  straight JOINT seed=20261029 Hs=1.5; solver mean 54.44ms; elapsed 70.2s
+  circle GP independent seed=20261029 Hs=1.5; solver mean 2.06ms; elapsed 75.3s
+  circle JOINT seed=20261029 Hs=1.5; solver mean 54.71ms; elapsed 103.2s
+  mixed GP independent seed=20261029 Hs=1.5; solver mean 2.37ms; elapsed 108.5s
+  mixed JOINT seed=20261029 Hs=1.5; solver mean 53.88ms; elapsed 136.0s
+  climb GP independent seed=20261029 Hs=1.5; solver mean 2.09ms; elapsed 141.2s
+  climb JOINT seed=20261029 Hs=1.5; solver mean 58.19ms; elapsed 170.7s
+SEED 2/5 complete 724.8s
+  hover GP independent seed=20261030 Hs=0.5; solver mean 2.32ms; elapsed 9.8s
+  hover JOINT seed=20261030 Hs=0.5; solver mean 58.71ms; elapsed 39.7s
+  straight GP independent seed=20261030 Hs=0.5; solver mean 2.36ms; elapsed 45.2s
+  straight JOINT seed=20261030 Hs=0.5; solver mean 58.70ms; elapsed 75.2s
+  circle GP independent seed=20261030 Hs=0.5; solver mean 2.55ms; elapsed 80.9s
+  circle JOINT seed=20261030 Hs=0.5; solver mean 58.60ms; elapsed 110.8s
+  mixed GP independent seed=20261030 Hs=0.5; solver mean 2.33ms; elapsed 116.3s
+  mixed JOINT seed=20261030 Hs=0.5; solver mean 59.19ms; elapsed 146.4s
+  climb GP independent seed=20261030 Hs=0.5; solver mean 2.29ms; elapsed 152.0s
+  climb JOINT seed=20261030 Hs=0.5; solver mean 58.86ms; elapsed 181.8s
+  hover GP independent seed=20261030 Hs=1.5; solver mean 2.35ms; elapsed 10.0s
+  hover JOINT seed=20261030 Hs=1.5; solver mean 58.82ms; elapsed 39.9s
+  straight GP independent seed=20261030 Hs=1.5; solver mean 2.33ms; elapsed 45.4s
+  straight JOINT seed=20261030 Hs=1.5; solver mean 58.54ms; elapsed 75.2s
+  circle GP independent seed=20261030 Hs=1.5; solver mean 2.28ms; elapsed 80.5s
+  circle JOINT seed=20261030 Hs=1.5; solver mean 58.96ms; elapsed 110.5s
+  mixed GP independent seed=20261030 Hs=1.5; solver mean 2.22ms; elapsed 116.1s
+  mixed JOINT seed=20261030 Hs=1.5; solver mean 59.71ms; elapsed 146.4s
+  climb GP independent seed=20261030 Hs=1.5; solver mean 2.24ms; elapsed 151.9s
+  climb JOINT seed=20261030 Hs=1.5; solver mean 65.70ms; elapsed 185.5s
+SEED 3/5 complete 1092.5s
+  hover GP independent seed=20261031 Hs=0.5; solver mean 2.64ms; elapsed 11.4s
+  hover JOINT seed=20261031 Hs=0.5; solver mean 68.71ms; elapsed 46.3s
+  straight GP independent seed=20261031 Hs=0.5; solver mean 2.72ms; elapsed 52.8s
+  straight JOINT seed=20261031 Hs=0.5; solver mean 68.53ms; elapsed 87.9s
+  circle GP independent seed=20261031 Hs=0.5; solver mean 2.72ms; elapsed 94.4s
+  circle JOINT seed=20261031 Hs=0.5; solver mean 67.62ms; elapsed 128.4s
+  mixed GP independent seed=20261031 Hs=0.5; solver mean 2.39ms; elapsed 134.1s
+  mixed JOINT seed=20261031 Hs=0.5; solver mean 65.48ms; elapsed 167.4s
+  climb GP independent seed=20261031 Hs=0.5; solver mean 2.52ms; elapsed 173.9s
+  climb JOINT seed=20261031 Hs=0.5; solver mean 67.96ms; elapsed 208.3s
+  hover GP independent seed=20261031 Hs=1.5; solver mean 2.54ms; elapsed 11.1s
+  hover JOINT seed=20261031 Hs=1.5; solver mean 67.27ms; elapsed 45.3s
+  straight GP independent seed=20261031 Hs=1.5; solver mean 2.54ms; elapsed 51.6s
+  straight JOINT seed=20261031 Hs=1.5; solver mean 67.32ms; elapsed 85.9s
+  circle GP independent seed=20261031 Hs=1.5; solver mean 2.49ms; elapsed 92.2s
+  circle JOINT seed=20261031 Hs=1.5; solver mean 67.01ms; elapsed 126.3s
+  mixed GP independent seed=20261031 Hs=1.5; solver mean 2.48ms; elapsed 132.6s
+  mixed JOINT seed=20261031 Hs=1.5; solver mean 67.97ms; elapsed 167.1s
+  climb GP independent seed=20261031 Hs=1.5; solver mean 2.53ms; elapsed 173.5s
+  climb JOINT seed=20261031 Hs=1.5; solver mean 67.98ms; elapsed 208.7s
+SEED 4/5 complete 1510.2s
+  hover GP independent seed=20261032 Hs=0.5; solver mean 2.87ms; elapsed 12.2s
+  hover JOINT seed=20261032 Hs=0.5; solver mean 69.49ms; elapsed 47.4s
+  straight GP independent seed=20261032 Hs=0.5; solver mean 2.71ms; elapsed 54.1s
+  straight JOINT seed=20261032 Hs=0.5; solver mean 69.53ms; elapsed 89.4s
+  circle GP independent seed=20261032 Hs=0.5; solver mean 2.89ms; elapsed 95.6s
+  circle JOINT seed=20261032 Hs=0.5; solver mean 67.17ms; elapsed 129.6s
+  mixed GP independent seed=20261032 Hs=0.5; solver mean 2.46ms; elapsed 135.6s
+  mixed JOINT seed=20261032 Hs=0.5; solver mean 65.73ms; elapsed 169.0s
+  climb GP independent seed=20261032 Hs=0.5; solver mean 2.51ms; elapsed 175.0s
+  climb JOINT seed=20261032 Hs=0.5; solver mean 64.52ms; elapsed 207.7s
+  hover GP independent seed=20261032 Hs=1.5; solver mean 2.49ms; elapsed 10.4s
+  hover JOINT seed=20261032 Hs=1.5; solver mean 63.44ms; elapsed 42.6s
+  straight GP independent seed=20261032 Hs=1.5; solver mean 2.52ms; elapsed 48.4s
+  straight JOINT seed=20261032 Hs=1.5; solver mean 63.59ms; elapsed 80.7s
+  circle GP independent seed=20261032 Hs=1.5; solver mean 2.41ms; elapsed 86.4s
+  circle JOINT seed=20261032 Hs=1.5; solver mean 64.24ms; elapsed 119.1s
+  mixed GP independent seed=20261032 Hs=1.5; solver mean 2.45ms; elapsed 125.1s
+  mixed JOINT seed=20261032 Hs=1.5; solver mean 64.00ms; elapsed 157.6s
+  climb GP independent seed=20261032 Hs=1.5; solver mean 2.49ms; elapsed 163.4s
+  climb JOINT seed=20261032 Hs=1.5; solver mean 63.36ms; elapsed 195.4s
+SEED 5/5 complete 1913.9s

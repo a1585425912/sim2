@@ -1,0 +1,68 @@
+{
+  "trials": 20,
+  "seeds": [
+    20261028,
+    20261047
+  ],
+  "config": {
+    "seed": 20261028,
+    "nodes": 20,
+    "dt": 0.2,
+    "duration": 90.0,
+    "warmup": 5.0,
+    "deployment_radius_m": 100.0,
+    "buoy_height_m": 1.5,
+    "mean_current_mps": [
+      0.3,
+      0.0
+    ],
+    "gm_tau_s": 20.0,
+    "gm_sigma_mps": 0.05,
+    "truth_grid_s": 0.001,
+    "range_std_m": 0.8,
+    "angle_std_deg": 0.35,
+    "acceleration_psd": 0.5,
+    "initial_velocity_std": 20.0,
+    "nav_position_std_m": 0.02,
+    "nav_velocity_std_mps": 0.02,
+    "nav_roll_pitch_std_deg": 0.1,
+    "nav_yaw_std_deg": 0.3,
+    "main_rounds": 25,
+    "processing_s": 0.012,
+    "slot_s": 0.04,
+    "slot_samples": 9,
+    "frame_budget_s": 0.2,
+    "subarray": 2,
+    "subarray_reference_mhz": 300.0,
+    "frequencies_mhz": [
+      300.0,
+      1000.0
+    ],
+    "total_power_w": 1.0
+  },
+  "imm": {
+    "beta": 1.0,
+    "q_hover": 0.01,
+    "q_cv": 0.5,
+    "q_ct": 0.1,
+    "q_omega": 0.0004,
+    "omega_initial_std": 0.25,
+    "switching_rate": 0.05,
+    "initial_velocity_std": 20.0
+  },
+  "elapsed_s": 279.5491613000013,
+  "python": "3.12.8 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:48:34) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "2.0.1",
+  "source_sha256": {
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_ci\\fusion.py": "50b6d1cb09cd491cd0a842f060d27bd95c1ec5b27a90eceac4a86d377e8425a0",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_ci\\run_experiment.py": "e58d667a4e504ce920472cddb340e5542aa0f0d3064dd0e81f57c577c651f3c7",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_dpc\\imm_filter.py": "fe5ed6ad44f54da0126a265336c47221b07c71499116f85241a506a2204e2f72",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\imm_dpc\\run_experiment.py": "842102f6e5cad50aa03bb13dea3109c3a35e801b8afc3caed2f922f5451cbb81",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\gm_dpc_unified\\experiment.py": "91d23216bbd89f0d6e15c9f13bbd9301e0fcd79c76a1b0d67fec771dfeb37f72"
+  },
+  "definition": "CI: finite 25-round convex information consensus, fixed Metropolis weights; no logdet optimization; no N multiplier",
+  "feedback": false,
+  "prediction": "frozen-mode branch mean/covariance, then CI each slot",
+  "timing": "Identical assumed 12ms processing + 25*5ms communication; covariance payload and hardware processing unvalidated",
+  "baseline_check": "First-seed DPC states and both-frequency power curves match prior IMM outputs with atol=1e-10"
+}

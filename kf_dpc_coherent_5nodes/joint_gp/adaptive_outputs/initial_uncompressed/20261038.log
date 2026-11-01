@@ -1,0 +1,5 @@
+  hover JointGP_Gaussian_background seed=20261038 Hs=0.5; solver=35.82ms elapsed=22.4s
+  hover JointGP_TTrend seed=20261038 Hs=0.5; solver=70.21ms elapsed=56.3s
+  straight JointGP_Gaussian_background seed=20261038 Hs=0.5; solver=34.06ms elapsed=73.8s
+  straight JointGP_TTrend seed=20261038 Hs=0.5; solver=71.14ms elapsed=108.1s
+  circle JointGP_Gaussian_background seed=20261038 Hs=0.5; solver=34.57ms elapsed=126.0s

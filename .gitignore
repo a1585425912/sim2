@@ -2,4 +2,10 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 .venv/
-outputs/
+.pytest_cache/
+
+# 本地工作记录（不纳入仓库）
+.workbuddy/
+
+# 已废弃的实验代码
+已废弃/

@@ -1,0 +1,8 @@
+SIGNAL seed=20261043 Hs=0.5 hover: vRMSE 0.0002 m/s, wall 54.9s
+FIT seed=20261043 Hs=0.5 hover GP_noD_q1: 37.55ms/frame wall 73.9s
+FIT seed=20261043 Hs=0.5 hover GP_Doppler_q1: 40.03ms/frame wall 93.6s
+FIT seed=20261043 Hs=0.5 hover GP_noD_q001: 37.17ms/frame wall 112.2s
+FIT seed=20261043 Hs=0.5 hover GP_Doppler_q001: 41.51ms/frame wall 132.6s
+FIT seed=20261043 Hs=0.5 hover GP_Doppler_ignore_buoy: 42.48ms/frame wall 153.7s
+SIGNAL seed=20261043 Hs=0.5 straight: vRMSE 0.4533 m/s, wall 179.9s
+FIT seed=20261043 Hs=0.5 straight GP_noD_q1: 37.53ms/frame wall 198.5s

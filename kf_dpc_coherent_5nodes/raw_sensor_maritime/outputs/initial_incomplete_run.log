@@ -1,0 +1,21 @@
+NAV seed=20261028 Hs=0.5 p=0.224m v=0.126m/s attitude=0.794deg (3.4s)
+  TARGET hover seed=20261028 Hs=0.5 done (5.8s)
+  TARGET straight seed=20261028 Hs=0.5 done (8.2s)
+  TARGET circle seed=20261028 Hs=0.5 done (10.5s)
+Traceback (most recent call last):
+  File "D:\git\sim2\kf_dpc_coherent_5nodes\raw_sensor_maritime\run_full.py", line 127, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\git\sim2\kf_dpc_coherent_5nodes\raw_sensor_maritime\run_full.py", line 118, in main
+    r,n=run_case(cfg,seed,out,i==0);rows.extend(r);navrows.append(n)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\git\sim2\kf_dpc_coherent_5nodes\raw_sensor_maritime\run_full.py", line 70, in run_case
+    p,v=trajectory(t,kind,cfg);future,_=trajectory(t[:,None]+h,kind,cfg)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\git\sim2\kf_dpc_coherent_5nodes\raw_sensor_maritime\run_full.py", line 24, in trajectory
+    if kind!='climb':return previous.trajectory(t,kind,cfg)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\git\sim2\kf_dpc_coherent_5nodes\imm_dpc\run_experiment.py", line 22, in trajectory
+    grid = np.arange(round((cfg.duration+cfg.frame_budget_s)/.001)+1)*.001
+                                         ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Config' object has no attribute 'frame_budget_s'

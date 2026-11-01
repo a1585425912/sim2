@@ -1,0 +1,44 @@
+{
+  "status": "completed",
+  "trials": 10,
+  "seeds": [
+    20261038,
+    20261039,
+    20261040,
+    20261041,
+    20261042,
+    20261043,
+    20261044,
+    20261045,
+    20261046,
+    20261047
+  ],
+  "elapsed_s": 2549.0661022999993,
+  "parameters": {
+    "background_jerk_psd": 0.001,
+    "jump_scale_std": 0.02,
+    "degrees_of_freedom": 3.0,
+    "iterations": 3,
+    "starts": [
+      1.0,
+      0.001
+    ]
+  },
+  "source_sha256": {
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\adaptive.py": "23e98a7079699a63abad65e6f3693f6f1655a8726dd6ad5c4eb6b5feb18f0a1d",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\run_adaptive.py": "6ff2bac946c67e265c24956e9b8e6248f049945c9ff8f016ef3b2a26c7b2d56f",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\sequential.py": "b1f204a3b3309ca7403de8fa6a96e56c2466ed1689e268bd965440011356c711",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\solver.py": "f0dd78ae408f787740d38617c4e85ff8049578063391a334356219bfc4df6c40",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\navigation.py": "07816a2fc2ea26e652538ec25c7a70d257aec0918c747cca67e565ea85f3ead1",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\joint_gp\\run_joint.py": "0aed8a8e3c8bb625c8910416b491f8af604621a4daad46a3bdf5b183e0dc8352",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\physics.py": "c451be4553f75660426166043cc684e2526792ec3a93b059ce48741d0015f4b7",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\estimation.py": "2635db2fb472d4bc250f01c1edb669804e79d56338dd3bd3838290374e4ac500",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\target.py": "42e50e53ff21f2f23706a6ba9010cf97480665580bc358b28d55e01508129681",
+    "D:\\git\\sim2\\kf_dpc_coherent_5nodes\\raw_sensor_maritime\\run_full.py": "0ccec1d5d3397a4cfbb33ace42eeb479299eb6d13b2ade435c8d1c56ecc1da9e"
+  },
+  "methods": [
+    "JointGP_Gaussian_background",
+    "JointGP_TTrend"
+  ],
+  "boundary": "Gaussian background GP plus Student-t acceleration impulse, persistent joint arrival; Gaussian-matched-covariance ablation; raw Gaussian sensors unchanged; NAV linearized once then radar MAP; conditional scale covariance, not automatic calibration"
+}

@@ -1,0 +1,44 @@
+{
+  "config": {
+    "seed": 20261028,
+    "nodes": 20,
+    "dt": 0.2,
+    "duration": 90.0,
+    "warmup": 5.0,
+    "deployment_radius_m": 100.0,
+    "buoy_height_m": 1.5,
+    "mean_current_mps": [
+      0.3,
+      0.0
+    ],
+    "gm_tau_s": 20.0,
+    "gm_sigma_mps": 0.05,
+    "truth_grid_s": 0.001,
+    "range_std_m": 0.8,
+    "angle_std_deg": 0.35,
+    "acceleration_psd": 0.5,
+    "initial_velocity_std": 20.0,
+    "nav_position_std_m": 0.02,
+    "nav_velocity_std_mps": 0.02,
+    "nav_roll_pitch_std_deg": 0.1,
+    "nav_yaw_std_deg": 0.3,
+    "main_rounds": 25,
+    "processing_s": 0.012,
+    "slot_s": 0.04,
+    "slot_samples": 9,
+    "frame_budget_s": 0.2,
+    "subarray": 2,
+    "subarray_reference_mhz": 300.0,
+    "frequencies_mhz": [
+      300.0,
+      1000.0
+    ],
+    "total_power_w": 1.0
+  },
+  "trials": 20,
+  "seeds": [
+    20261028,
+    20261047
+  ],
+  "elapsed_s": 157.4143168999999
+}
