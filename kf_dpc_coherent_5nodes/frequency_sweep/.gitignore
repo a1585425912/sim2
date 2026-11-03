@@ -1,0 +1,6 @@
+# 几何缓存和worker中间产物仅留本地
+outputs/chunks/
+outputs/legacy_chunks/
+# 完整大表通过Release发布
+outputs/models_frequency_per_seed.csv
+outputs/per_seed_all.csv
